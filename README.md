@@ -16,5 +16,6 @@
 git clone https://github.com/cubantonystark/fare.git<br>
 ## Change directory to the cloned repo:
 cd fare
-type: install_neural_rendering.bat and hit ENTER
+### type: 
+```install_neural_rendering.bat``` and hit ENTER
 ## All dependencies should be installed after this step.
