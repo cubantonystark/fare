@@ -1,10 +1,25 @@
 # F.A.R.E
 ## Fast Area Rendering at the Edge
+
+### Requirements
+
+- An __NVIDIA GPU__..
+- A __C++14__ capable compiler. The following choices are recommended and have been tested:
+  - __Windows:__ Visual Studio 2019 or 2022
+  - __Linux:__ GCC/G++ 8 or higher
+- A recent version of __[CUDA](https://developer.nvidia.com/cuda-toolkit)__. The following choices are recommended and have been tested:
+  - __Windows:__ CUDA 11.5 or higher
+- __[CMake](https://cmake.org/) v3.21 or higher__.
+- __[Python](https://www.python.org/) 3.7 or higher__ for interactive bindings. Also, run `pip install -r requirements.txt`.
+- __(optional) [OptiX](https://developer.nvidia.com/optix) 7.6 or higher__ for faster mesh SDF training.
+- __(optional) [Vulkan SDK](https://vulkan.lunarg.com/)__ for DLSS support.
+
 <br>
 clone this repo:<br>
 git clone https://github.com/cubantonystark/fare.git<br>
 <br>
-get into the folder with the cloed repo:<br>
+Change directory to the cloned repo:<br>
 cd fare<br>
 type: install_neural_rendering.bat and hit ENTER<br>
-
+<br>
+All dependencies should be installed after this step.
