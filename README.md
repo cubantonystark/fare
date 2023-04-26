@@ -18,4 +18,4 @@
 ```cd fare```
 #### Next type: 
 ```install_neural_rendering.bat``` and hit ENTER
-#### All dependencies should be installed after this step.
+#### All dependencies should be installed after this step. Just double click in the ```fare.py``` file to start the server.
