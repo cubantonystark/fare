@@ -14,9 +14,7 @@
 - __(optional) [Vulkan SDK](https://vulkan.lunarg.com/)__ for DLSS support.
 ### Clone this repo:<br>
 git clone https://github.com/cubantonystark/fare.git<br>
-<br>
-Change directory to the cloned repo:<br>
-cd fare<br>
-type: install_neural_rendering.bat and hit ENTER<br>
-<br>
-All dependencies should be installed after this step.
+## Change directory to the cloned repo:
+cd fare
+type: install_neural_rendering.bat and hit ENTER
+## All dependencies should be installed after this step.
