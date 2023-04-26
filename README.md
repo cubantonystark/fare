@@ -13,7 +13,7 @@
 - __(optional) [OptiX](https://developer.nvidia.com/optix) 7.6 or higher__ for faster mesh SDF training.
 - __(optional) [Vulkan SDK](https://vulkan.lunarg.com/)__ for DLSS support.
 <br>
-### clone this repo:<br>
+### Clone this repo:<br>
 git clone https://github.com/cubantonystark/fare.git<br>
 <br>
 Change directory to the cloned repo:<br>
