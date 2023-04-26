@@ -6,7 +6,6 @@
 - An __NVIDIA GPU__..
 - A __C++14__ capable compiler. The following choices are recommended and have been tested:
   - __Windows:__ Visual Studio 2019 or 2022
-  - __Linux:__ GCC/G++ 8 or higher
 - A recent version of __[CUDA](https://developer.nvidia.com/cuda-toolkit)__. The following choices are recommended and have been tested:
   - __Windows:__ CUDA 11.5 or higher
 - __[CMake](https://cmake.org/) v3.21 or higher__.
