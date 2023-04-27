@@ -152,7 +152,7 @@ class processor():
         if mode == 'scene':
             spinner = Halo(text='Computing image transforms', spinner='dots')
             spinner.start()            
-            command = 'python ./neural_rendering/scripts/colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16 --images images > log.log'
+            command = 'python ./scripts/colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16 --images images > log.log'
             os.system(command) 
             spinner.stop()
             
@@ -163,7 +163,7 @@ class processor():
             if os.path.exists('colmap.db'):
                 os.unlink('colmap.db')            
             
-            command = 'python ./neural_rendering/scripts/run.py --scene '+work_dir+' --train --gui'+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot snapshot.ingp' 
+            command = 'python ./scripts/run.py --scene '+work_dir+' --train --gui'+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot snapshot.ingp' 
             os.system(command)
             
             os.mkdir('nerf')   
@@ -232,7 +232,7 @@ class processor():
         
         spinner = Halo(text='Computing image transforms', spinner='dots')
         spinner.start()            
-        command = 'python ./neural_rendering/scripts/colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16 --images images > log.log'
+        command = 'python ./scripts/colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16 --images images > log.log'
         os.system(command)
         spinner.stop()  
         
@@ -243,7 +243,7 @@ class processor():
         if os.path.exists('colmap.db'):
             os.unlink('colmap.db')
         
-        command = 'python ./neural_rednering/scripts/run.py --scene '+work_dir+' --train --gui --n_steps 35000'+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot snapshot.ingp'
+        command = 'python ./scripts/run.py --scene '+work_dir+' --train --gui --n_steps 35000'+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot snapshot.ingp'
         os.system(command)
         
         os.mkdir('nerf')   
@@ -285,7 +285,7 @@ class processor():
             return
         
         else:
-            command = 'python ./neural_rednering/scripts/run.py --scene '+source_dir+' --train --gui --n_steps 35000'+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot '+source_dir+ps+'snapshot.ingp' 
+            command = 'python ./scripts/run.py --scene '+source_dir+' --train --gui --n_steps 35000'+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot '+source_dir+ps+'snapshot.ingp' 
             os.system(command)
             sys.exit()
             
@@ -297,7 +297,7 @@ class processor():
             return
         
         else:
-            command = 'python ./neural_rednering/scripts/run.py --load_snapshot '+files[0]+' --train --gui '+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot '+source_dir+ps+'snapshot.ingp'
+            command = 'python ./scripts/run.py --load_snapshot '+files[0]+' --train --gui '+display_mode+' --height '+str(heigth)+' --width '+str(width)+' --save_snapshot '+source_dir+ps+'snapshot.ingp'
             os.system(command)
             sys.exit()        
 
