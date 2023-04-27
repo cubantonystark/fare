@@ -2,7 +2,7 @@ import os, glob, sys, shutil, argparse, cv2, screeninfo, platform, logging
 from halo import Halo
 from tqdm import tqdm
 from PIL import Image
-import torch
+#import torch
 from carvekit.api.high import HiInterface
 
 level    = logging.INFO
