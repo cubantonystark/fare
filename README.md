@@ -19,4 +19,9 @@
 ```cd fare```
 #### Next type: 
 ```install_neural_rendering.bat``` and hit ENTER
+Then, use CMake to build the project: (on Windows, this must be in a [developer command prompt](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-160#developer_command_prompt))
+```sh
+instant-ngp$ cmake . -B build
+instant-ngp$ cmake --build build --config RelWithDebInfo -j
+```
 #### All dependencies should be installed after this step. Just double click in the ```fare.py``` file to start the server.
