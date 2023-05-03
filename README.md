@@ -4,6 +4,7 @@
 ### Requirements
 
 - An NVIDIA GPU.
+- Git(https://git-scm.com/downloads)
 - A __C++14__ capable compiler. The following choices are recommended and have been tested:
   - __Windows:__ Visual Studio 2019 or 2022
 - A recent version of __[CUDA](https://developer.nvidia.com/cuda-toolkit)__. The following choices are recommended and have been tested:
