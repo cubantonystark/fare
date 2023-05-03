@@ -12,4 +12,6 @@ del run_eolian.py
 del colmap2nerf.py
 cd neural_rendering
 pip install -r requirements.txt
+pip install pywin32
+pip install flask
 cd ..
