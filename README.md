@@ -19,8 +19,10 @@
 ```cd fare```
 #### Next type: 
 ```install_neural_rendering.bat``` and hit ENTER<br>
-Then, use CMake to build the project: (on Windows, this must be in a [developer command prompt](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-160#developer_command_prompt))
+Then, use CMake to build the project: (on Windows, this must be in a [developer command prompt](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-160#developer_command_prompt)) and navigating to the fare directory:
 ```sh
+cd fare
+cd neural_rendering
 instant-ngp$ cmake . -B build
 instant-ngp$ cmake --build build --config RelWithDebInfo -j
 ```
