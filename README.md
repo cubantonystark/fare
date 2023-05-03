@@ -18,7 +18,7 @@
 #### Change directory to the cloned repo:
 ```cd fare```
 #### Next type: 
-```install_neural_rendering.bat``` and hit ENTER
+```install_neural_rendering.bat``` and hit ENTER<br>
 Then, use CMake to build the project: (on Windows, this must be in a [developer command prompt](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-160#developer_command_prompt))
 ```sh
 instant-ngp$ cmake . -B build
