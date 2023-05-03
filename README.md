@@ -23,7 +23,7 @@ Then, use CMake to build the project: (on Windows, this must be in a [developer 
 ```sh
 cd fare
 cd neural_rendering
-instant-ngp$ cmake . -B build
-instant-ngp$ cmake --build build --config RelWithDebInfo -j
+cmake . -B build
+cmake --build build --config RelWithDebInfo -j
 ```
 #### All dependencies should be installed after this step. Just double click in the ```fare.py``` file to start the server.
