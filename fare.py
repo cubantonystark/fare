@@ -210,7 +210,7 @@ def render_area():
 	if request.method == 'GET':
 		target = request.args.get('target', None)    
 		building = request.args.get('building', None)   
-		command = 'python '+working_dir+'\\neural_rendering\\scripts\\run.py --load_snapshot '+working_dir+'\\fare\\templates\\imagery\\'+str(building)+'\\'+str(target)+'\\snapshot.ingp --gui'
+		command = 'python '+working_dir+'\\neural_rendering\\scripts\\run.py --load_snapshot '+working_dir+'\\templates\\imagery\\'+str(building)+'\\'+str(target)+'\\snapshot.ingp --gui'
 		os.system(command)
 
 	return render_template('imagery/'+building+'/index.html')
